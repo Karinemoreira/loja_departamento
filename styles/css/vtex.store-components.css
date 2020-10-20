@@ -1,0 +1,265 @@
+.notificationBarContainer {
+  background-color: #e6f1e6;
+  color: #03034e;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  border: none;
+}
+
+.imageElement--dealsb {
+  display: flex;
+}
+
+.imageElement--imgs {
+  width: 192px;
+  height: 301px;
+  margin-right: 21px;  
+}
+
+
+.newsletter {
+  background-color: #4F32FE;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+  margin-top: 50px;
+}
+
+.label--news {
+  color: #fff;
+  font-weight: 700;
+  font: 20px Nunito Sans;
+}
+
+.label--news::after {
+  content: "\a  Acompanhe nossas novidades.\a Cadastre-se em nossa newsletter.\a\a";
+  color: #fff;
+  white-space: pre-wrap;
+  font-weight: 400;
+  font: 14px Nunito Sans ;
+}
+
+.label {
+  color: #fff;
+  font-size: 20px;
+}
+
+.inputGroup {
+  font-family: Nunito Sans;
+  font-weight: bolder;
+  padding-bottom: 4px;
+  display: block;
+  color: #fff;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 100%;
+}
+
+:global(.vtex-input-prefix__group) {
+  border: none;
+
+}
+
+.searchIcon {
+  color: #ffffff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  border: none;
+  border-radius: 29px;
+  background-color: #2811aa;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  font-size: 16px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  font: 14px Nunito Sans ;
+  font-weight: 900;
+  border: none;
+  display: block;
+}
+
+.buttonContainer {
+  padding-top: 0px;
+  justify-content: center;
+  display: flex;
+}
+
+.imageElement--storePrint {
+  margin-bottom: 20px;
+}
+
+.skuSelectorContainer {
+  margin: 1rem 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .logoImage {
+    display: flex;
+    margin-top: 6px;
+    justify-content: left;
+  
+  }
+  .logoContainer {
+    padding: 0;
+    display: contents;
+  }
+
+  .newsletter .container {
+    padding: 140px;
+  }
+
+  .label {
+    font-size: 40px;
+  }
+  
+  .imageElement--storePrint {
+    margin-bottom: 0px;
+    max-height: 600px;
+  }
+
+  .searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    margin: 0;
+    background-color: #4f32fe;
+    border: none;
+    padding: 0px; 
+  }
+  
+  :global(.vtex-input-prefix__group) {
+    border-radius: 0;
+    border: none;
+    height: 57px;
+  }
+
+  :global(.vtex-input__suffix) {
+    border-radius: 0;
+    background-color: #4f32fe;
+  }
+
+  :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: white;
+    font-weight: 300;
+    font: 14px Nunito Sans;
+    text-align: start;
+  }
+
+  .searchBarContainer {
+    background-color: #4f32fe;
+    border: none;
+    max-width: 100%;   
+  }
+
+.newsletter {
+  background-color: #4F32FE;
+  max-width: 1528px;
+  margin: 0 auto;
+}
+
+.newsletter .container {
+  padding: 60px 10px;
+  margin-top: 50px;
+}
+
+.label--news {
+  color: #fff;
+  font-weight: 700;
+  font: 20px Nunito Sans;
+}
+
+.label--news::after {
+  content: "\a\a  Acompanhe nossas novidades.\a Cadastre-se em nossa newsletter.\a\a";
+  color: #fff;
+  white-space: pre-wrap;
+  font-weight: 400;
+  font: 14px Nunito Sans ;
+}
+
+.label {
+  color: #fff;
+  font-size: 20px;
+}
+
+.inputGroup {
+  font-family: Nunito Sans;
+  font-weight: bolder;
+  padding-bottom: 4px;
+  display: block;
+  color: #fff;
+}
+
+:global(.vtex-store-components-3-x-searchBarContainer) {
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 100%;
+}
+
+:global(.vtex-store-components-3-x-container) {
+  padding: 0px;
+}
+
+:global(.vtex-input-prefix__group) {
+  border: none;
+}
+
+.searchIcon--searchBar {
+  color: #ffffff;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
+  border: none;
+  border-radius: 29px;
+  background-color: #2811aa;
+}
+
+.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
+  font-size: 14px;
+  font-weight: 300;
+  margin-left: 30px;
+}
+
+.inputGroup :global(.vtex-button) {
+  background-color: transparent;
+  font: 14px Nunito Sans ;
+  font-weight: 900;
+  border: none;
+  display: block;
+}
+ 
+}
+
+.productImagesContainer--quickview .carouselContainer {
+  justify-content: flex-start;
+}
+
+.productImagesContainer--quickview .productImageTag {
+  object-fit: cover !important;
+}
+
+.productImagesContainer--quickview .carouselGaleryThumbs {
+  display: none;
+}
+
+.productImagesContainer--quickview .carouselGaleryCursor {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.productNameContainer {
+  color: #3f3f40;
+  font-weight: bold;
+  font-size: 30px;
+}

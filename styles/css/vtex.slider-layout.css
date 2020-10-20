@@ -1,0 +1,58 @@
+.sliderLayoutContainer {
+  justify-content: center;
+}
+.sliderLayoutContainer--carousel {
+  height: 250px;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
+  padding-left: 18px !important;
+  padding-right: 18px !important;
+  height: 331px;
+}
+
+.sliderTrackContainer {
+  max-width: 1850px;
+}
+
+.paginationDotsContainer {
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
+
+.paginationDot--carousel {
+  background-color: #F0F0F0;
+} 
+
+.paginationDot--firstCarousel--isActive :global(.vtex-slider-layout-0-x-paginationDot--firstCarousel--isActive) {
+  background-color: #2CFFF5;
+}
+
+.paginationDot--isActive {
+  background-color: #4F32FE;
+}
+
+.layoutContainer--shelf {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 96rem;
+}
+
+.slide--shelf {
+  margin-bottom: 25px;
+}
+
+@media screen and (min-width: 82em) {
+
+  .sliderLayoutContainer--shelf {
+    width: 100%;
+  }
+
+  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel) {
+    margin-left: 57px;
+    margin-right: 57px;
+  }
+
+
+
+}
