@@ -20,16 +20,13 @@
   margin-right: 21px;  
 }
 
+.searchBarIcon {
+  color: #4F32FE;
+}
+
 
 .newsletter {
   background-color: #4F32FE;
-  max-width: 1528px;
-  margin: 0 auto;
-}
-
-.newsletter .container {
-  padding: 60px 10px;
-  margin-top: 50px;
 }
 
 .label--news {
@@ -70,12 +67,9 @@
 
 }
 
-.searchIcon {
-  color: #ffffff;
-}
-
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
   border: none;
+  font-weight: 700;
   border-radius: 29px;
   background-color: #2811aa;
 }
@@ -106,7 +100,7 @@
   margin: 1rem 0;
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
   .logoImage {
     display: flex;
     margin-top: 6px;
@@ -118,11 +112,21 @@
     display: contents;
   }
 
+  .searchBarIcon {
+    color: white;
+  }
+
+  .searchIcon--searchBar {
+    margin-right: 4px;
+  }
+
   .newsletter .container {
-    padding: 140px;
+    width: auto;
+    margin: 0px 21px 0px 21px;
   }
 
   .label {
+    margin-top: 41px; 
     font-size: 40px;
   }
   
@@ -146,7 +150,7 @@
 
   :global(.vtex-input__suffix) {
     border-radius: 0;
-    background-color: #4f32fe;
+    background-color: #4F32FE;
   }
 
   :global(.vtex-styleguide-9-x-input)::placeholder {
@@ -168,15 +172,10 @@
   margin: 0 auto;
 }
 
-.newsletter .container {
-  padding: 60px 10px;
-  margin-top: 50px;
-}
+
 
 .label--news {
   color: #fff;
-  font-weight: 700;
-  font: 20px Nunito Sans;
 }
 
 .label--news::after {
@@ -189,7 +188,8 @@
 
 .label {
   color: #fff;
-  font-size: 20px;
+  font-weight: 700;
+  font: 20px Nunito Sans;
 }
 
 .inputGroup {
@@ -214,8 +214,13 @@
   border: none;
 }
 
-.searchIcon--searchBar {
-  color: #ffffff;
+:global(.vtex-store-components0-x-searchIcon--searchBar) {
+  color: white
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  border: none;
+  margin-left: 28px;
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
@@ -236,6 +241,11 @@
   font-weight: 900;
   border: none;
   display: block;
+}
+
+.container--news {
+  width: 371px;
+  height: 271px;
 }
  
 }

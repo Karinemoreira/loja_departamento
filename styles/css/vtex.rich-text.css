@@ -99,7 +99,7 @@
   font-weight: 400;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 700px) {
   .container--question .strong {
     font-size: 40px;
     line-height: 3rem;

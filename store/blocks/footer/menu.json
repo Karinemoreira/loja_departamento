@@ -267,7 +267,8 @@
         "href": "/about/d",
         "noFollow": true,
         "tagTitle": "A marca",
-        "text": "A marca"
+        "text": "A marca",
+        "blockClass": "brandLink"
       }
     }
   },
@@ -305,7 +306,8 @@
     "props": {
       "itemProps": {
         "tagTitle": "Atendimento",
-        "text": "Atendimento"
+        "text": "Atendimento",
+        "blockClass": "serviceLink"
       }
     },
     "blocks": [
@@ -337,7 +339,8 @@
         "href": "/help/d",
         "noFollow": true,
         "tagTitle": "Minha conta",
-        "text": "Minha conta"
+        "text": "Minha conta",
+        "blockClass": "accountLink"
       }
     }
   },
@@ -360,7 +363,8 @@
     "props": {
       "itemProps": {
         "tagTitle": "Ajuda",
-        "text": "Ajuda"
+        "text": "Ajuda",
+        "blockClass": "helpLink"
       }
     },
     "blocks": [

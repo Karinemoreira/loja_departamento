@@ -25,7 +25,6 @@
 
 .flexRow--deals {
   background-color: #4F32FE;
-  padding: 14px 0px;
 }
 
 .flexRow--deals .stretchChildrenWidth {
@@ -95,11 +94,7 @@
   padding: 0 !important;
 }
 
-:global(.vtex-flex-layout-0-x-flexRowContent) {
-  margin-bottom: 3px;
-}
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: px) {
   .flexRow--rowImages {
     margin-top: 50px;
     padding: 0;

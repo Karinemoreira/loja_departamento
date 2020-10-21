@@ -13,6 +13,8 @@
   height: 55px;
 }
 
+
+
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
   color: #ffffff;
   font-size: 14px;
@@ -27,7 +29,7 @@
   background-color: #4f32fe;
   padding: 14px 0px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .flexCol--deals2,
   .flexCol--deals3,
   .flexCol--deals4{

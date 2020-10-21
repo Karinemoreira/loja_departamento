@@ -23,7 +23,7 @@
   "newsletter": {
     "props": {
       "blockClass": "news",
-      "label": "Quer ficar por dentro de tudo?",
+      "label": "\n Quer ficar por dentro de tudo?",
       "placeholder": "Digite seu e-mail",
       "submit": "Cadastrar"
     }

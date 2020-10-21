@@ -159,7 +159,8 @@
   "search-bar": {
     "props": {
       "blockClass": "searchBar",
-      "placeholder": "Buscar"
+      "placeholder": "Buscar",
+      "displayMode": "clear-button"
     }
   }
 }
