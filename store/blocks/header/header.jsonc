@@ -15,18 +15,10 @@
     "children": [
       "flex-layout.row#1-desktop",
       "flex-layout.row#2-desktop",
-      "sticky-layout#4-desktop"
+      "flex-layout.row#3-desktop"
     ]
   },
   "flex-layout.row#1-desktop": {
-    "children": [
-      "telemarketing"
-    ],
-    "props": {
-      "fullWidth": true
-    }
-  },
-  "flex-layout.row#2-desktop": {
     "children": [
       "rich-text#notificationBar"
     ],
@@ -48,17 +40,9 @@
       "width": "grow"
     }
   },
-  "sticky-layout#4-desktop": {
+  "flex-layout.row#2-desktop": {
     "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": [
-      "flex-layout.row#4-desktop"
-    ]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
+      "blockClass": "row2Desktop",
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
@@ -67,9 +51,8 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
       "search-bar",
+      "flex-layout.col#spacer",
       "login",
       "minicart.v2"
     ]
@@ -80,14 +63,6 @@
     },
     "children": [
       "logo#desktop"
-    ]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": [
-      "vtex.menu@2.x:menu#category-menu"
     ]
   },
   "logo#desktop": {
@@ -102,6 +77,50 @@
     "props": {
       "showIconProfile": true,
       "hideIconLabel": true
+    }
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "row3Desktop",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "colSizing": "auto",
+      "fullWidth": true
+    },
+    "children": [
+      "drawer#desktop",
+      "vtex.menu@2.x:menu#category-menu",
+      "flex-layout.col#outlet"
+    ]
+  },
+  "drawer#desktop": {
+    "props": {
+      "maxWidth": 100
+    }
+  },
+  "flex-layout.col#outlet": {
+    "props": {
+      "blockClass": "outlet",
+      "horizontalAlign": "center",
+      "width": "auto"
+    },
+    "children": [
+      "image#outlet",
+      "rich-text#outletText"
+    ]
+  },
+  "image#outlet": {
+    "props": {
+      "src": "assets/saleRoxo.svg",
+      "maxWidth": "20px"
+    }
+  },
+  "rich-text#outletText": {
+    "props": {
+      "text": "**Saldão**",
+      "blockClass": "outletText",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
     }
   },
   "header-layout.mobile": {
@@ -123,7 +142,7 @@
       "minicart.v2"
     ],
     "props": {
-      "blockClass": "main-header-mobile",
+      "blockClass": "row1Mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
       "fullWidth": true
@@ -136,8 +155,14 @@
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home"
+      "menu-item#category-electronics",
+      "menu-item#category-cellphones",
+      "menu-item#category-computing",
+      "menu-item#category-home",
+      "menu-item#category-decor",
+      "menu-item#category-beauty",
+      "menu-item#category-media",
+      "menu-item#category-all"
     ],
     "props": {
       "orientation": "vertical"

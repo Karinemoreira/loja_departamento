@@ -23,7 +23,7 @@
   "newsletter": {
     "props": {
       "blockClass": "news",
-      "label": "\n Quer ficar por dentro de tudo?",
+      "label": "Quer ficar por dentro de tudo?",
       "placeholder": "Digite seu e-mail",
       "submit": "Cadastrar"
     }
@@ -34,15 +34,15 @@
       "socialNetworks": [
         {
           "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
+          "src": "assets/imgs/facebook.png"
         },
         {
           "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "src": "assets/imgs/instagram.png"
         },
         {
           "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "src": "assets/imgs/youtube.png"
         }
       ]
     }
@@ -97,7 +97,7 @@
       "newsletter",
       "vtex.menu@2.x:menu#footer-mobile",
       "social-networks",
-      "accepted-payment-methods",
+      "flex-layout.row#paymentImages",
       "rich-text#footer-mobile"
     ],
     "props": {
@@ -111,6 +111,65 @@
     "props": {
       "paddingTop": 4,
       "paddingBottom": 4
+    }
+  },
+  "flex-layout.row#paymentImages": {
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "blockClass": "paymentImgs",
+      "width": "50%"
+    },
+    "children": [
+      "image#visa",
+      "image#master",
+      "image#dinners",
+      "image#amex",
+      "image#elo",
+      "image#billet"
+    ]
+  },
+  "image#visa": {
+    "props": {
+      "blockClass": "visaImg",
+      "src": "assets/imgs/visa.png"
+    }
+  },
+  "image#master": {
+    "props": {
+      "blockClass": "masterImg",
+      "src": "assets/imgs/mastercard.png",
+      "height": 30,
+      "width": 35
+    }
+  },
+  "image#dinners": {
+    "props": {
+      "blockClass": "dinnersImg",
+      "src": "assets/imgs/dinners.png"
+    }
+  },
+  "image#amex": {
+    "props": {
+      "blockClass": "amexImg",
+      "src": "assets/imgs/amex.png",
+      "height": 35,
+      "width": 35
+    }
+  },
+  "image#elo": {
+    "props": {
+      "blockClass": "eloImg",
+      "src": "assets/imgs/elo.png",
+      "height": 30,
+      "width": 35
+    }
+  },
+  "image#billet": {
+    "props": {
+      "blockClass": "billetImg",
+      "src": "assets/imgs/billet.png",
+      "height": 25,
+      "width": 25
     }
   },
   "rich-text#footer-mobile": {

@@ -13,8 +13,8 @@
       "flex-layout.row#banners",
       "rich-text#textTitle",
       "rich-text#home",
-      "rich-text#shelf-lastopportunity",
-      "flex-layout.row#shelf-lastopportunity",
+      "rich-text#shelf-lastOpportunity",
+      "flex-layout.row#shelf-lastOpportunity",
       "rich-text#shelf-like",
       "flex-layout.row#shelf-like"
     ]
@@ -133,6 +133,8 @@
       "slider-layout#demo-products"
     ],
     "props": {
+      "category": "19",
+      "hideUnavailableItems": true,
       "orderBy": "OrderByTopSaleDESC"
     }
   },
@@ -229,13 +231,13 @@
       "blockClass": "textHome"
     }
   },
-  "rich-text#shelf-lastopportunity": {
+  "rich-text#shelf-lastOpportunity": {
     "props": {
       "text": "## Última oportunidade",
       "blockClass": "shelfTitle"
     }
   },
-  "flex-layout.row#shelf-lastopportunity": {
+  "flex-layout.row#shelf-lastOpportunity": {
     "children": [
       "list-context.product-list#demo2"
     ]
@@ -248,7 +250,9 @@
       "slider-layout#demo2-products"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "19",
+      "hideUnavailableItems": true
     }
   },
   "slider-layout#demo2-products": {
@@ -283,7 +287,9 @@
       "slider-layout#demo2-products"
     ],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "19",
+      "hideUnavailableItems": true
     }
   },
   "slider-layout#demo3-products": {

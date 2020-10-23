@@ -94,7 +94,9 @@
   padding: 0 !important;
 }
 
-@media screen and (max-width: px) {
+
+
+@media screen and (max-width: 700px) {
   .flexRow--rowImages {
     margin-top: 50px;
     padding: 0;
@@ -110,12 +112,24 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 20px ;
+    grid-column-gap: 20px;
     grid-row-gap: 20px;
   }
   
   .flexRow--rowBanners {
     margin-top: 50px;
     padding: 0;
+  }
+
+  :global(.vtex-flex-layout-0-x-flexRow--socialNetworksMob) {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flexRowContent--paymentImgs {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

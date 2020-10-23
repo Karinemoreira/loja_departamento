@@ -29,6 +29,11 @@
   background-color: #4F32FE;
 }
 
+.newsletter--news {
+  width: 100%;
+  height: 304px;
+}
+
 .label--news {
   color: #fff;
   font-weight: 700;
@@ -76,6 +81,7 @@
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   font-size: 16px;
+  margin-left: 30px;
 }
 
 .inputGroup :global(.vtex-button) {
@@ -120,8 +126,7 @@
     margin-right: 4px;
   }
 
-  .newsletter .container {
-    width: auto;
+  .container-news {
     margin: 0px 21px 0px 21px;
   }
 
@@ -168,7 +173,6 @@
 
 .newsletter {
   background-color: #4F32FE;
-  max-width: 1528px;
   margin: 0 auto;
 }
 
@@ -243,9 +247,14 @@
   display: block;
 }
 
-.container--news {
-  width: 371px;
-  height: 271px;
+/*.label--news {
+  height: 150px;
+  padding-top: 41px;
+}*/
+
+.form--news :global(.vtex-store-components-3-x-form--news){
+  height: 150px;
+  padding-top: 41px;
 }
  
 }

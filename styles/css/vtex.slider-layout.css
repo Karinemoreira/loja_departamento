@@ -45,14 +45,8 @@
     width: 100%;
   }
 
-  .paginationDotsContainer {
-  top: 363px;
+  .paginationDotsContainer--firstCarousel {
   margin-bottom: 0;
-  }
-
-  :global(.vtex-slider-layout-0-x-sliderLayoutContainer--carousel) {
-    margin-left: 57px;
-    margin-right: 57px;
   }
 
 
