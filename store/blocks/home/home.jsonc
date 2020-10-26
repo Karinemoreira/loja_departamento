@@ -1,9 +1,15 @@
 {
   "store.home": {
     "blocks": [
+      "responsive-layout.desktop",
+      "responsive-layout.tablet",
+      "responsive-layout.mobile",
+      "__fold__.experimentalLazyAssets"
+    ]
+  },
+  "responsive-layout.desktop": {
+    "children": [
       "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "rich-text#shelf-categories",
       "list-context.image-list#categories",
@@ -11,7 +17,6 @@
       "flex-layout.row#shelf",
       "flex-layout.row#images",
       "flex-layout.row#banners",
-      "rich-text#textTitle",
       "rich-text#home",
       "rich-text#shelf-lastOpportunity",
       "flex-layout.row#shelf-lastOpportunity",
@@ -19,9 +24,38 @@
       "flex-layout.row#shelf-like"
     ]
   },
-  "shelf#home": {
-    "blocks": [
-      "product-summary.shelf"
+  "responsive-layout.tablet": {
+    "children": [
+      "list-context.image-list#demo",
+      "flex-layout.row#deals",
+      "rich-text#shelf-categories",
+      "list-context.image-list#categories",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#images",
+      "flex-layout.row#banners",
+      "rich-text#home",
+      "rich-text#shelf-lastOpportunity",
+      "flex-layout.row#shelf-lastOpportunity",
+      "rich-text#shelf-like",
+      "flex-layout.row#shelf-like"
+    ]
+  },
+  "responsive-layout.mobile": {
+    "children": [
+      "list-context.image-list#demo",
+      "flex-layout.row#deals",
+      "rich-text#shelf-categories",
+      "list-context.image-list#categories",
+      "rich-text#shelf-title",
+      "flex-layout.row#shelf",
+      "flex-layout.row#images",
+      "flex-layout.row#banners",
+      "rich-text#home",
+      "rich-text#shelf-lastOpportunity",
+      "flex-layout.row#shelf-lastOpportunity",
+      "rich-text#shelf-like",
+      "flex-layout.row#shelf-like"
     ]
   },
   "list-context.image-list#demo": {
@@ -30,8 +64,11 @@
     ],
     "props": {
       "height": 720,
-      "fullWidth": true,
       "images": [
+        {
+          "image": "assets/imgs/bannerPrincipal.png",
+          "mobileImage": "assets/imgs/home_mobile.png"
+        },
         {
           "image": "assets/imgs/bannerPrincipal.png",
           "mobileImage": "assets/imgs/home_mobile.png"
@@ -51,7 +88,9 @@
         "phone": 1
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "never",
+      "usePagination": true,
+      "width": "auto",
       "blockClass": "firstCarousel"
     }
   },
@@ -66,6 +105,7 @@
       "slider-layout#category-images"
     ],
     "props": {
+      "height": 171,
       "images": [
         {
           "image": "assets/imgs/note.png",
@@ -106,11 +146,11 @@
     "props": {
       "itemsPerPage": {
         "desktop": 8,
-        "tablet": 2,
+        "tablet": 4,
         "phone": 2
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "never",
       "blockClass": "carousel"
     }
   },
@@ -141,7 +181,7 @@
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 2
       },
@@ -167,37 +207,43 @@
   "image#home1": {
     "props": {
       "src": "assets/imgs/miband5.png",
-      "blockClass": "imgs"
+      "blockClass": "imgs",
+      "maxWidth": "178px"
     }
   },
   "image#home2": {
     "props": {
       "src": "assets/imgs/pcgamer.png",
-      "blockClass": "imgs"
+      "blockClass": "imgs",
+      "maxWidth": "178px"
     }
   },
   "image#home3": {
     "props": {
       "src": "assets/imgs/produtosApple.png",
-      "blockClass": "imgs"
+      "blockClass": "imgs",
+      "maxWidth": "178px"
     }
   },
   "image#home4": {
     "props": {
       "src": "assets/imgs/eBooks.png",
-      "blockClass": "imgs"
+      "blockClass": "imgs",
+      "maxWidth": "178px"
     }
   },
   "image#home5": {
     "props": {
       "src": "assets/imgs/tvLed.png",
-      "blockClass": "imgs"
+      "blockClass": "imgs",
+      "maxWidth": "178px"
     }
   },
   "image#home6": {
     "props": {
       "src": "assets/imgs/decoracao.png",
-      "blockClass": "imgs"
+      "blockClass": "imgs",
+      "maxWidth": "178px"
     }
   },
   "flex-layout.row#banners": {
@@ -211,24 +257,22 @@
   },
   "image#banner1": {
     "props": {
-      "src": "assets/imgs/drones.png"
+      "src": "assets/imgs/drones.png",
+      "maxWidth": "100%"
     }
   },
   "image#banner2": {
     "props": {
-      "src": "assets/imgs/100ReaisDesconto.png"
-    }
-  },
-  "rich-text#textTitle": {
-    "props": {
-      "text": "Aqui você encontra o melhor de tudo.",
-      "blockClass": "textTitle"
+      "src": "assets/imgs/100ReaisDesconto.png",
+      "maxWidth": "100%"
     }
   },
   "rich-text#home": {
     "props": {
-      "text": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
-      "blockClass": "textHome"
+      "text": "##Aqui você encontra o melhor de tudo.##\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
+      "blockClass": "textHome",
+      "textAlignment": "center",
+      "textPosition": "center"
     }
   },
   "rich-text#shelf-lastOpportunity": {
@@ -258,7 +302,7 @@
   "slider-layout#demo2-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 2
       },
@@ -271,7 +315,9 @@
   "rich-text#shelf-like": {
     "props": {
       "text": "## Você também vai gostar",
-      "blockClass": "shelfTitle"
+      "blockClass": "shelfTitle",
+      "textAlignment": "center",
+      "textPosition": "center"
     }
   },
   "flex-layout.row#shelf-like": {

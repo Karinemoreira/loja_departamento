@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "vtex.search": "2.x",
+    "vtex.responsive-layout": "0.x",
     "vtex.search-resolver": "1.x",
     "vtex.store": "2.x",
     "vtex.store-header": "2.x",

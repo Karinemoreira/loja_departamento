@@ -1,40 +1,8 @@
 {
-  "vtex.menu@2.x:menu#footer-desktop": {
+  "vtex.menu@2.x:menu#about": {
     "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#about-desktop",
-      "menu-item#service-desktop",
-      "menu-item#help-desktop"
-    ]
-  },
-  "menu-item#about-desktop": {
-    "props": {
-      "id": "menu-item-category-about",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "#",
-        "noFollow": true,
-        "tagTitle": "Sobre",
-        "text": "Sobre"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#about-desktop"
-    ]
-  },
-  "vtex.menu@2.2:submenu.accordion#about-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#about-accordion"
-    ]
-  },
-  "vtex.menu@2.x:menu#about-desktop-accordion": {
-    "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "aboutMenu"
     },
     "children": [
       "menu-item#brand",
@@ -42,188 +10,37 @@
       "menu-item#store"
     ]
   },
-  "menu-item#brand-desktop": {
+  "vtex.menu@2.x:menu#service": {
     "props": {
-      "id": "menu-item-category-about",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about/d",
-        "noFollow": true,
-        "tagTitle": "A marca",
-        "text": "A marca"
-      }
-    }
-  },
-  "menu-item#talk-desktop": {
-    "props": {
-      "id": "menu-item-category-about",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about/d",
-        "noFollow": true,
-        "tagTitle": "Fale conosco",
-        "text": "Fale conosco"
-      }
-    }
-  },
-  "menu-item#store-desktop": {
-    "props": {
-      "id": "menu-item-category-about",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about/d",
-        "noFollow": true,
-        "tagTitle": "Loja Física",
-        "text": "Loja Física"
-      }
-    }
-  },
-  "menu-item#service-desktop": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Atendimento",
-        "text": "Atendimento"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#service-desktop"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#service-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-service-desktop"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-service-desktop": {
-    "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "serviceMenu"
     },
     "children": [
-      "menu-item#myAccount-desktop",
-      "menu-item#myOrders-desktop"
+      "menu-item#myAccount",
+      "menu-item#myOrders"
     ]
   },
-  "menu-item#myAccount-desktop": {
+  "vtex.menu@2.x:menu#help": {
     "props": {
-      "id": "menu-item-category-service",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/help/d",
-        "noFollow": true,
-        "tagTitle": "Minha conta",
-        "text": "Minha conta"
-      }
-    }
-  },
-  "menu-item#myOrders-desktop": {
-    "props": {
-      "id": "menu-item-category-service",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/help/d",
-        "noFollow": true,
-        "tagTitle": "Meus pedidos",
-        "text": "Meus pedidos"
-      }
-    }
-  },
-  "menu-item#help-desktop": {
-    "props": {
-      "itemProps": {
-        "tagTitle": "Ajuda",
-        "text": "Ajuda"
-      }
-    },
-    "blocks": [
-      "vtex.menu@2.x:submenu.accordion#help-desktop"
-    ]
-  },
-  "vtex.menu@2.x:submenu.accordion#help-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#footer-help-desktop"
-    ]
-  },
-  "vtex.menu@2.x:menu#footer-help-desktop": {
-    "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blockClass": "helpMenu"
     },
     "children": [
-      "menu-item#payment-desktop",
-      "menu-item#privacity-desktop",
-      "menu-item#exchange-desktop"
+      "menu-item#myAccount",
+      "menu-item#myOrders"
     ]
-  },
-  "menu-item#payment-desktop": {
-    "props": {
-      "id": "menu-item-category-help",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/help/d",
-        "noFollow": true,
-        "tagTitle": "Pagamento",
-        "text": "Pagamento"
-      }
-    }
-  },
-  "menu-item#privacity-desktop": {
-    "props": {
-      "id": "menu-item-category-help",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/help/d",
-        "noFollow": true,
-        "tagTitle": "Política de privacidade",
-        "text": "Política de privacidade"
-      }
-    }
-  },
-  "menu-item#exchange-desktop": {
-    "props": {
-      "id": "menu-item-category-help",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/help/d",
-        "noFollow": true,
-        "tagTitle": "Política de trocas",
-        "text": "Política de trocas"
-      }
-    }
   },
   "vtex.menu@2.x:menu#footer-mobile": {
     "props": {
       "orientation": "vertical"
     },
     "children": [
-      "menu-item#about-mobile",
-      "menu-item#service-mobile",
-      "menu-item#help-mobile"
+      "menu-item#payment",
+      "menu-item#privacity",
+      "menu-item#exchange"
     ]
   },
-  "menu-item#about-mobile": {
+  "menu-item#about": {
     "props": {
       "id": "menu-item-category-about",
       "type": "custom",
@@ -302,7 +119,7 @@
       }
     }
   },
-  "menu-item#service-mobile": {
+  "menu-item#service": {
     "props": {
       "itemProps": {
         "tagTitle": "Atendimento",
@@ -359,7 +176,7 @@
       }
     }
   },
-  "menu-item#help-mobile": {
+  "menu-item#help": {
     "props": {
       "itemProps": {
         "tagTitle": "Ajuda",

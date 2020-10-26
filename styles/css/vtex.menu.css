@@ -1,3 +1,13 @@
 .accordionIcon {
   display: none;
 }
+
+.styledLinkContent--firstMenuItem {
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #000000;
+}
+
+.styledLinkContainer--firstMenuItem {
+  margin-right: 8px;
+}

@@ -5,4 +5,6 @@
     "children": [
       "vtex.menu@2.x:menu#category-menu"
     ]
-  },
+  },    justify-content: center;
+    align-self: center;
+    width: 66vw;

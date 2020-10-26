@@ -24,7 +24,8 @@
     ],
     "props": {
       "blockClass": "notificationBar",
-      "fullWidth": "true"
+      "fullWidth": "true",
+      "horizontalAlign": "center"
     }
   },
   "rich-text#notificationBar": {
@@ -44,33 +45,34 @@
     "props": {
       "blockClass": "row2Desktop",
       "horizontalAlign": "center",
-      "verticalAlign": "center",
+      "verticalAlign": "middle",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "search-bar",
+      "logo#desktop",
+      "flex-layout.col#spacer",
+      "search-bar#desktop",
       "flex-layout.col#spacer",
       "login",
       "minicart.v2"
-    ]
-  },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": [
-      "logo#desktop"
     ]
   },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "url": "assets/imgs/logo.png",
-      "width": 105,
-      "height": 40
+      "width": 94,
+      "height": 34
+    }
+  },
+  "search-bar#desktop": {
+    "props": {
+      "blockClass": "searchBarDesktop",
+      "placeholder": "O que você precisa hoje? :)",
+      "displayMode": "clear-button",
+      "maxWidth": "100%"
     }
   },
   "login": {
@@ -83,55 +85,23 @@
     "props": {
       "blockClass": "row3Desktop",
       "horizontalAlign": "center",
-      "verticalAlign": "center",
       "colSizing": "auto",
       "fullWidth": true
     },
     "children": [
-      "drawer#desktop",
-      "vtex.menu@2.x:menu#category-menu",
-      "flex-layout.col#outlet"
+      "vtex.menu@2.x:menu#category-menu"
     ]
   },
-  "drawer#desktop": {
-    "props": {
-      "maxWidth": 100
-    }
-  },
-  "flex-layout.col#outlet": {
-    "props": {
-      "blockClass": "outlet",
-      "horizontalAlign": "center",
-      "width": "auto"
-    },
-    "children": [
-      "image#outlet",
-      "rich-text#outletText"
-    ]
-  },
-  "image#outlet": {
-    "props": {
-      "src": "assets/saleRoxo.svg",
-      "maxWidth": "20px"
-    }
-  },
-  "rich-text#outletText": {
-    "props": {
-      "text": "**Saldão**",
-      "blockClass": "outletText",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER"
-    }
-  },
+  // mobile -----------------------
   "header-layout.mobile": {
     "children": [
-      "sticky-layout#1-mobile"
+      "sticky-layout#1-mobile",
+      "search-bar"
     ]
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#1-mobile",
-      "flex-layout.row#search"
+      "flex-layout.row#1-mobile"
     ]
   },
   "flex-layout.row#1-mobile": {
@@ -149,14 +119,17 @@
     }
   },
   "drawer": {
+    "props": {
+      "maxWidth": 335
+    },
     "children": [
       "menu#drawer"
     ]
   },
   "menu#drawer": {
     "children": [
-      "menu-item#category-electronics",
-      "menu-item#category-cellphones",
+      "menu-item#category-electronic",
+      "menu-item#category-smartphone",
       "menu-item#category-computing",
       "menu-item#category-home",
       "menu-item#category-decor",
@@ -172,14 +145,8 @@
     "props": {
       "title": "Logo",
       "url": "assets/imgs/logo.png",
-      "width": 93,
-      "height": 35
+      "width": 90
     }
-  },
-  "flex-layout.row#search": {
-    "children": [
-      "search-bar"
-    ]
   },
   "search-bar": {
     "props": {

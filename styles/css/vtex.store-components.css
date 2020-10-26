@@ -1,17 +1,32 @@
 .notificationBarContainer {
   background-color: #e6f1e6;
-  color: #03034e;
+  color: #000000;
   font-weight: 700;
   font-size: 12px;
   text-decoration: none;
 }
 
+.logoImage {
+  display: flex;
+  justify-content: left;
+}
+
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  border: none;
+  border-bottom: 1px solid grey;
+  width: 48vw;
+}
+
+:global(.vtex-input__suffix) {
+  padding: 0 !important;
 }
 
 .imageElement--dealsb {
   display: flex;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
 
 .imageElement--imgs {
@@ -61,15 +76,15 @@
   color: #fff;
 }
 
-:global(.vtex-store-components-3-x-searchBarContainer) {
+.input :global(.vtex-store-components-3-x-searchBarContainer) {
   padding-top: 0;
   padding-bottom: 0;
-  max-width: 100%;
+  margin: 3px;
+  width: 48vw !important;
 }
 
 :global(.vtex-input-prefix__group) {
   border: none;
-
 }
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
@@ -106,7 +121,7 @@
   margin: 1rem 0;
 }
 
-@media only screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
   .logoImage {
     display: flex;
     margin-top: 6px;
@@ -168,7 +183,6 @@
   .searchBarContainer {
     background-color: #4f32fe;
     border: none;
-    max-width: 100%;   
   }
 
 .newsletter {
@@ -207,7 +221,6 @@
 :global(.vtex-store-components-3-x-searchBarContainer) {
   padding-top: 0;
   padding-bottom: 0;
-  max-width: 100%;
 }
 
 :global(.vtex-store-components-3-x-container) {
