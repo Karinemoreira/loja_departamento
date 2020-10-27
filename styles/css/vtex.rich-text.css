@@ -1,11 +1,12 @@
 .container--textNotificationBar {
-  height: 41px;
+  justify-content: center;
+  align-items: center;
   background-color: black;
 }
 
 .paragraph--textNotificationBar {
   color: white;
-  margin-bottom: 20px;
+
 }
 
 .strong--textNotificationBar {

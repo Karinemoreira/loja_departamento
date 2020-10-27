@@ -31,11 +31,9 @@
 .flexRowContent--row2Desktop {
   height: 56px;
   display: flex;
-  justify-content: space-around;
 }
 
 .flexRow--row2Desktop {
-  width: 1260px;
   height: 56px;
   justify-content: center;
   align-self: center;
@@ -73,6 +71,10 @@
   margin-left: 20px;
   padding: 0;
   display: flex;
+}
+
+.flexRow--banners {
+  margin-top: 50px;
 }
 
 .container--rowBanners {

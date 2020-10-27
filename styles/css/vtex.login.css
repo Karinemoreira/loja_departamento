@@ -1,0 +1,9 @@
+.profileIcon {
+  width: 19px;
+  height: 23px;
+}
+
+.container :global(.vtex-button__label) {
+  margin-right: 0px;
+  margin-left: 0px;
+}

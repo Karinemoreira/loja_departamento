@@ -8,16 +8,19 @@
 
 .logoImage {
   display: flex;
-  justify-content: left;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
   border-bottom: 1px solid grey;
-  width: 48vw;
+  padding: 0;
 }
 
 :global(.vtex-input__suffix) {
   padding: 0 !important;
+}
+
+.imageElement--firstCarousel {
+  height: 650px;
 }
 
 .imageElement--dealsb {
@@ -25,8 +28,7 @@
 }
 
 .container {
-  display: flex;
-  justify-content: center;
+  padding: 0;
 }
 
 .imageElement--imgs {
@@ -37,6 +39,7 @@
 
 .searchBarIcon {
   color: #4F32FE;
+  margin-left: -20px;
 }
 
 
@@ -80,7 +83,6 @@
   padding-top: 0;
   padding-bottom: 0;
   margin: 3px;
-  width: 48vw !important;
 }
 
 :global(.vtex-input-prefix__group) {
@@ -135,10 +137,6 @@
 
   .searchBarIcon {
     color: white;
-  }
-
-  .searchIcon--searchBar {
-    margin-right: 4px;
   }
 
   .container-news {

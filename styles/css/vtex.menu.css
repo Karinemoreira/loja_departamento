@@ -8,6 +8,10 @@
   color: #000000;
 }
 
+.styledLinkIcon--firstMenuItem {
+  margin-right: 1.0rem;
+}
+
 .styledLinkContainer--firstMenuItem {
-  margin-right: 8px;
+  margin-right: 20px;
 }

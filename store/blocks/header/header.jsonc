@@ -13,75 +13,73 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-desktop"
+      "header-row#1-desktop",
+      "header-row#2-desktop",
+      "header-row#3-desktop"
     ]
   },
-  "flex-layout.row#1-desktop": {
+  "header-spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "header-row#1-desktop": {
     "children": [
       "rich-text#notificationBar"
     ],
     "props": {
-      "blockClass": "notificationBar",
-      "fullWidth": "true",
-      "horizontalAlign": "center"
+      "blockClass": "rowNotificationBar",
+      "width": "100%",
+      "infinite": true
     }
   },
   "rich-text#notificationBar": {
     "props": {
-      "text": "**#saldão**   produtos com até *60% de desconto **+** frete grátis **+** 12 sem juros* **>**",
+      "text": "**#saldão**   produtos com até *60% de desconto **+** frete grátis **+** 12x sem juros* **>**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "textNotificationBar"
     }
   },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
-    }
-  },
-  "flex-layout.row#2-desktop": {
+  "header-row#2-desktop": {
     "props": {
       "blockClass": "row2Desktop",
       "horizontalAlign": "center",
       "verticalAlign": "middle",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
+      "width": "100%"
     },
     "children": [
+      "header-spacer",
       "logo#desktop",
-      "flex-layout.col#spacer",
       "search-bar#desktop",
-      "flex-layout.col#spacer",
       "login",
-      "minicart.v2"
+      "minicart.v2",
+      "header-spacer"
     ]
   },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "url": "assets/imgs/logo.png",
-      "width": 94,
-      "height": 34
+      "width": 100,
+      "height": 56
     }
   },
   "search-bar#desktop": {
     "props": {
       "blockClass": "searchBarDesktop",
       "placeholder": "O que você precisa hoje? :)",
-      "displayMode": "clear-button",
-      "maxWidth": "100%"
+      "displayMode": "clear-button"
     }
   },
   "login": {
     "props": {
       "showIconProfile": true,
-      "hideIconLabel": true
+      "hideIconLabel": true,
+      "width": "100%"
     }
   },
-  "flex-layout.row#3-desktop": {
+  "header-row#3-desktop": {
     "props": {
       "blockClass": "row3Desktop",
       "horizontalAlign": "center",
@@ -89,7 +87,9 @@
       "fullWidth": true
     },
     "children": [
-      "vtex.menu@2.x:menu#category-menu"
+      "header-spacer",
+      "vtex.menu@2.x:menu#category-menu",
+      "header-spacer"
     ]
   },
   // mobile -----------------------
@@ -101,14 +101,14 @@
   },
   "sticky-layout#1-mobile": {
     "children": [
-      "flex-layout.row#1-mobile"
+      "header-row#1-mobile"
     ]
   },
-  "flex-layout.row#1-mobile": {
+  "header-row#1-mobile": {
     "children": [
       "drawer",
       "logo#mobile",
-      "flex-layout.col#spacer",
+      "header-spacer",
       "minicart.v2"
     ],
     "props": {
@@ -152,7 +152,7 @@
     "props": {
       "blockClass": "searchBar",
       "placeholder": "Buscar",
-      "displayMode": "clear-button"
+      "displayMode": "search-button"
     }
   }
 }

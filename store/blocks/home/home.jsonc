@@ -63,7 +63,7 @@
       "slider-layout#demo-images"
     ],
     "props": {
-      "height": 720,
+      "max-height": 470,
       "images": [
         {
           "image": "assets/imgs/bannerPrincipal.png",
@@ -90,7 +90,7 @@
       "infinite": true,
       "showNavigationArrows": "never",
       "usePagination": true,
-      "width": "auto",
+      "width": "100%",
       "blockClass": "firstCarousel"
     }
   },
