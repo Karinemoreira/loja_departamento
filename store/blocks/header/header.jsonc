@@ -29,8 +29,7 @@
     ],
     "props": {
       "blockClass": "rowNotificationBar",
-      "width": "100%",
-      "infinite": true
+      "fullWidth": true
     }
   },
   "rich-text#notificationBar": {
@@ -44,9 +43,7 @@
   "header-row#2-desktop": {
     "props": {
       "blockClass": "row2Desktop",
-      "horizontalAlign": "center",
-      "verticalAlign": "middle",
-      "width": "100%"
+      "horizontalAlign": "center"
     },
     "children": [
       "header-spacer",
@@ -62,7 +59,7 @@
       "title": "Logo",
       "url": "assets/imgs/logo.png",
       "width": 100,
-      "height": 56
+      "height": 58
     }
   },
   "search-bar#desktop": {
@@ -83,7 +80,6 @@
     "props": {
       "blockClass": "row3Desktop",
       "horizontalAlign": "center",
-      "colSizing": "auto",
       "fullWidth": true
     },
     "children": [

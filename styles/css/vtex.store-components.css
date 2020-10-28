@@ -8,6 +8,8 @@
 
 .logoImage {
   display: flex;
+  margin-top: 8px;
+  margin-left: 16px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {

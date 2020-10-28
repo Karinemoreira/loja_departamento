@@ -3,8 +3,7 @@
     "blocks": [
       "responsive-layout.desktop",
       "responsive-layout.tablet",
-      "responsive-layout.mobile",
-      "__fold__.experimentalLazyAssets"
+      "responsive-layout.mobile"
     ]
   },
   "responsive-layout.desktop": {

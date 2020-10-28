@@ -76,8 +76,7 @@
 }
 
 :global(.vtex-store-header-2-x-headerRowBackground--rowNotificationBar) {
-  width: 100% !important;
-  background-color: black !important;
+  background: black !important;
 }
 
 .headerRowContainer--rowNotificationBar {
