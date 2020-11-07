@@ -5,6 +5,27 @@
   background: black;
 }
 
+.sliderLeftArrow {
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #4F32FE11;
+  height: 58px;
+  width: 58px;
+  border-radius: 29px;
+  top: 121px;
+}
+
+.sliderRightArrow {
+  background: #ffffff;
+  box-shadow: 0px 3px 6px #4F32FE11;
+  height: 58px;
+  width: 58px;
+  border-radius: 29px;
+  top: 121px;
+}
+
+.caretIcon {
+  color: #4f32fe;
+}
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) {
   padding-left: 18px !important;
@@ -16,7 +37,9 @@
   max-width: 1260px;
 }
 
-
+:global(.vtex-slider-layout-0-x-imageElement--carousel) {
+  max-width: 139px;
+}
 
 .paginationDot--carousel {
   height: 0.625rem;
@@ -30,6 +53,11 @@
 .paginationDot--isActive {
   background-color: #4F32FE;
 }
+
+.paginationDotsContainer {
+  margin: 1.25rem 1.25rem;
+  }
+
 
 .layoutContainer--shelf {
   margin-top: 20px;

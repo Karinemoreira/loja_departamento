@@ -2,17 +2,118 @@
   display: none;
 }
 
+.styledIcon--rebel-pink {
+  margin-right: 10px;
+}
+
 .styledLinkContent--firstMenuItem {
-  font-weight: 600;
-  font-size: 0.9375rem;
-  color: #000000;
+  font: black 600 15px Nunito Sans;
+  font-size: 15px;
+  margin-right: 20px;
+}
+
+.styledLinkContainer--firstMenuItem {
+  margin-right: -10px;
 }
 
 .styledLinkIcon--firstMenuItem {
   margin-right: 1.0rem;
 }
 
-.styledLinkContainer--firstMenuItem {
-  margin-right: -20px;
-  margin-left: 0px;
+.menuContainerNav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 335px;
+}
+
+.styledLinkContent--menuItemFooter {
+  font: 14px Nunito Sans;
+  color: #847B91;
+}
+
+.menuContainer {
+  justify-content: space-between;
+}
+
+.menuContainer--menuFooter {
+  width: inherit;  
+}
+  
+.menuItem--firstMenuItem {
+  display: flex;
+  border: none;
+  padding: 0px;
+  height: auto;
+}
+
+.menuItem--firstMenuItem:first-child {
+  height: auto;
+  align-items: flex-start;
+}
+
+.menuItem--firstMenuItem:last-child, .styledLinkContent--firstMenuItem {
+  color: #000000;
+}
+
+.menuContainerNav {
+  width: auto;
+}
+
+.submenuWrapper--isOpen {
+  padding: 0px;
+  margin: 0px;
+}
+
+.submenuWrapper--subEletro--isOpen{
+  left: 14.9rem;
+  top: -2.54rem;
+  background-color: #f6f5f8;
+}
+
+.submenuWrapper--category-all--isOpen {
+  top: 42px;
+  left: -208px;
+}
+
+.submenuWrapper--category-all-eletroHome--isOpen {
+  top: -35px;
+  left: 255px;
+  background: #F6F5F8;
+}
+
+.menuItem--category-all-eletroHome {
+  margin-right: 45px;
+  border-top: 2px solid  #4F32FE;
+}
+
+.menuContainer--category--all-eletroHome {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content !important;
+}
+
+.submenuWrapper--isOpen :global(.vtex-menu-2-x-menuContainer) {
+  width: 255px;
+}
+
+.submenuWrapper--isOpen :global(.vtex-menu-2-x-styledLinkContainer) {
+  padding: 0px;
+  margin: 0px;
+}
+
+.submenuWrapper--isOpen :global(.vtex-menu-2-x-styledLinkContainer):hover {
+  background-color: #F6F5F8;
+}
+
+.submenuWrapper--isOpen :global(.vtex-menu-2-x-styledLinkContent) {
+  font: 14px Nunito Sans;
+  padding-left: 41px;
+  color: #000000;
+  margin-right: 41px;
+}
+
+.submenuWrapper--isOpen :global(.vtex-menu-2-x-styledLinkContent):hover {
+  font-weight: 700;
+  color: #4F32FE;
 }

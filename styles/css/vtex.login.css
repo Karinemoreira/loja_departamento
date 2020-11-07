@@ -3,7 +3,47 @@
   height: 23px;
 }
 
-.container :global(.vtex-button__label) {
-  margin-right: 0px;
-  margin-left: 0px;
+
+.emailPasswordOptionBtn :global(.vtex-button__label), .acessCodeOptionBtn :global(.vtex-button__label) {
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: none;
 }
+
+.buttonSocial :global(.vtex-login-2-x-oauthLabel) {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: none;
+}
+
+.container--loginIcon :global(.vtex-login-2-x-container) {
+  margin-left: 215px;
+}
+
+.container :global(.relative):focus {
+  outline: #ffffff;
+} 
+
+.container :global(.vtex-button__label) {
+  padding: 0;
+  width: 20px;
+  height: 24px;
+  margin-right: 20px;
+}
+
+.container :global(.vtex-button):focus {
+  border-color: #ffffff;
+  background-color: #ffffff;  
+}
+
+.container :global(.vtex-button):hover {
+  border-color: #ffffff;
+  background-color: #ffffff;  
+}
+
+.container :global(.vtex-button):active {
+  border-color: #ffffff;
+  background-color: #ffffff;  
+}
+

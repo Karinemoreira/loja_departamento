@@ -62,7 +62,7 @@
       "slider-layout#demo-images"
     ],
     "props": {
-      "max-height": 470,
+      "height": 470,
       "images": [
         {
           "image": "assets/imgs/bannerPrincipal.png",
@@ -257,18 +257,18 @@
   "image#banner1": {
     "props": {
       "src": "assets/imgs/drones.png",
-      "maxWidth": "100%"
+      "blockClass": "imgDrone"
     }
   },
   "image#banner2": {
     "props": {
       "src": "assets/imgs/100ReaisDesconto.png",
-      "maxWidth": "100%"
+      "blockClass": "imgDiscount"
     }
   },
   "rich-text#home": {
     "props": {
-      "text": "##Aqui você encontra o melhor de tudo.##\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
+      "text": "**Aqui você encontra o melhor de tudo.**\n\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five.",
       "blockClass": "textHome",
       "textAlignment": "center",
       "textPosition": "center"
@@ -340,7 +340,7 @@
   "slider-layout#demo3-products": {
     "props": {
       "itemsPerPage": {
-        "desktop": 5,
+        "desktop": 4,
         "tablet": 3,
         "phone": 2
       },

@@ -1,3 +1,8 @@
+
 .product-identifier--productReference {
-  margin-bottom: 1rem;
+  font: 600 12px Nunito Sans;
+  color: #847B91;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 27px
 }

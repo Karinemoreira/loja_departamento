@@ -1,3 +1,7 @@
+.container {
+  max-width: 1260px;
+}
+
 .flexRowContent--menu-link {
   background-color: #03044e;
   color: #fff;
@@ -23,43 +27,15 @@
   font-size: 14px;
 }
 
-
-.flexRowContent--row2Desktop .stretchChildrenWidth {
-  width: auto !important;
-}
-
-.flexRowContent--row2Desktop {
-  height: 56px;
-  display: flex;
-}
-
-.flexRow--row2Desktop {
-  height: 56px;
-  justify-content: center;
-  align-self: center;
-}
-
-.flexRow--row3Desktop {
-  justify-content: center;
-  align-self: center;
-}
-
-.flexRowContent--row3Desktop {
-  max-width: 1260px;
-  justify-content: center;
-  align-self: center;
-}
-
-.container--deals {
-  max-width: 1260px;
-}
-
 .flexRow--deals {
   background-color: #4F32FE;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
 }
 
-.flexRow--deals .stretchChildrenWidth {
-  align-items: center;
+.flexRowContent--deals {
+  display: flex;
 }
 
 .flexRow--deals .flexCol {
@@ -73,15 +49,10 @@
   display: flex;
 }
 
-.flexRow--banners {
+.flexRow--rowBanners {
   margin-top: 50px;
+  justify-content: center;
 }
-
-.container--rowBanners {
-  margin-top: 15px;
-}
-
-
 
 .flexCol--filterCol {
   max-width: 500px;

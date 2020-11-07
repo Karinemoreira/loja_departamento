@@ -104,10 +104,5 @@
     "children": [
       "flex-layout.row#faq"
     ]
-  },
-  "minicart.v2": {
-    "props": {
-      "MinicartIcon": "icon-cart"
-    }
   }
 }

@@ -34,7 +34,7 @@
   },
   "rich-text#notificationBar": {
     "props": {
-      "text": "**#saldão**   produtos com até *60% de desconto **+** frete grátis **+** 12x sem juros* **>**",
+      "text": "**#saldão** produtos com até **60% de desconto** *+* **frete grátis** *+* **12x sem juros**",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "textNotificationBar"
@@ -46,20 +46,20 @@
       "horizontalAlign": "center"
     },
     "children": [
-      "header-spacer",
       "logo#desktop",
       "search-bar#desktop",
+      "header-spacer",
       "login",
-      "minicart.v2",
-      "header-spacer"
+      "minicart.v2"
     ]
   },
   "logo#desktop": {
     "props": {
       "title": "Logo",
       "url": "assets/imgs/logo.png",
+      "href": "/",
       "width": 100,
-      "height": 58
+      "height": 45
     }
   },
   "search-bar#desktop": {
@@ -73,7 +73,11 @@
     "props": {
       "showIconProfile": true,
       "hideIconLabel": true,
-      "width": "100%"
+      "blockClass": "loginIcon",
+      "optionsTitle": "Escolha como entrar",
+      "acessCodeTitle": "CÓDIGO DE ACESSO POR E-MAIL",
+      "emailPasswordTitle": "ENTRAR COM E-MAIL E SENHA",
+      "hasGoogleOneTap": true
     }
   },
   "header-row#3-desktop": {

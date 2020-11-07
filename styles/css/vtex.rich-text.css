@@ -1,27 +1,34 @@
 .container--textNotificationBar {
   justify-content: center;
-  align-items: center;
-  background-color: black;
+  background-color: #000;
 }
-
 .paragraph--textNotificationBar {
+  font: 16px Nunito Sans;
   color: white;
-
 }
 
-.strong--textNotificationBar {
+.italic--textNotificationBar {
+  font-style: normal;
   color: #2CFFF5;
 }
 
-.italic--textNotificationBar{
-  font: normal normal 700 16px Nunito Sans;
-  color: white;
-  margin-right: 15px;
+.strong--textNotificationBar:first-child {
+  font: 900 22px Nunito Sans;
+  color: #2CFFF5;
+  margin-right: 10px;
+  vertical-align: middle;
+   
 }
 
-.strong--textNotificationBar:first-child, .strong--textNotificationBar:last-child {
-  font: 22px Nunito Sans;
-  font-weight: 900;
+.strong--textNotificationBar::before {
+  padding-bottom: 10px;
+}
+
+.paragraph--textNotificationBar::after {
+  content: "\276F";
+  font: normal 800 15px Nunito Sans;
+  color: #2CFFF5;
+  margin-left: 15px;
 }
 
 .container--searchBar {

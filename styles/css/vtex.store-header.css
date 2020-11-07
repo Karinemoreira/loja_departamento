@@ -20,6 +20,7 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  padding-right: 0;
 }
 
 /* add a box-shadow to desktop/mobile header when stuck */
@@ -79,6 +80,42 @@
   background: black !important;
 }
 
+.headerRowBackground--row3Desktop {
+  justify-content: center;
+  display: flex;
+}
+
+.headerRowContainer--row3Desktop {
+  height: 44px;
+  margin-left: 21px;
+}/*
+
+.headerRowContent--row3Desktop {
+  height: 44px;
+  max-width: 1260px;
+  flex-grow: 150;
+  justify-content: center;
+}
+
+.headerRowContent--row3Desktop .stretchChildrenWidth:first-child {
+  margin-right: 10px;
+  flex-grow: 1;
+}
+
+.headerRowContent--row3Desktop .stretchChildrenWidth {
+  flex-grow: 150;
+  
+}
+
+.headerRow--row3Desktop {
+  display: flex;
+
+}
+
+.headerRowContent--row3Desktop .stretchChildrenWidth:last-child {
+  flex-grow: 1;
+}
+*/
 .headerRowContainer--rowNotificationBar {
   width: 100%;
   padding: 0 !important;
@@ -97,5 +134,11 @@
   :global(.vtex-sticky-layout-0-x-wrapper--stuck)
     :global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
     transition: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .headerRowContainer--row1Mobile {
+  height: 55px;
   }
 }

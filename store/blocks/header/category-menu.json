@@ -31,8 +31,8 @@
       },
       "iconProps": {
         "id": "bnd-logo",
-        "size": 16,
-        "viewBox": "0 0 16 16",
+        "size": 21,
+        "viewBox": "0 0 21 21",
         "activeClassName": "rebel-pink",
         "mutedClassName": "c-action-primary"
       },

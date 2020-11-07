@@ -5,19 +5,21 @@
 }
 
 .sellingPrice {
-  color: #3f3f40;
-  font-size: 1.25rem;
+  color: black;
+  font: 900 20px Nunito Sans;
 }
 
 /* .sellingPriceValue {
   font: Nunito Sans 13px;
   font-weight: 900;
 } */
-
 .installments {
-  font: 11px Nunitos Sans;
-  font-weight: 400;
+  font: 12px Nunitos Sans;
+  color: black;
+  margin-bottom: 1rem;
+  text-align: start;
 }
+
 
 .savings {
   font-weight: 500;
@@ -37,35 +39,31 @@
   display: flex;
 }
 
-/* .savings-discount--summary {
+.savings-discount--summary {
   font-size: 0.875rem;
   font-weight: 600;
   vertical-align: baseline;
   color: #FFFFFF;
-} */
-
-.currencyFraction--sumary {
-  height: 26px;
-}
+  padding: 0 0.5rem 0 0.5rem;
+} 
 
 .listPrice--summary {
   margin-bottom: 0.25rem;
   font-size: .875rem;
 }
 
-:global(.vtex-product-price-1-x-installments--summary){
-  font: 12px Nunitos Sans;
-  font-weight: 400;
+
+.installments--summary {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+  display: block;
+  text-align: start;
 }
 
-.installmentValue--summary {
-  margin-bottom: 0;
-  font: 11px Nunito Sans;
-  font-weight: 700;
-  color: black;
+@media only screen and (max-width: 700px) {
+.installments {
+  font: 400 12px Nunitos Sans;
+  text-align: center;
+  display: block;
 }
-
-:global(.vtex-product-price-1-x-installments) {
-  display: flex;
-  justify-content: start;
 }

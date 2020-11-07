@@ -7,9 +7,12 @@
 }
 
 .logoImage {
-  display: flex;
-  margin-top: 8px;
-  margin-left: 16px;
+    padding-top: 7px;
+    margin-left: 15px;
+}
+
+.searchBarInnerContainer {
+  width: 898px;
 }
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
@@ -21,12 +24,19 @@
   padding: 0 !important;
 }
 
+
+
 .imageElement--firstCarousel {
+  width: 1083px;
   height: 650px;
 }
 
 .imageElement--dealsb {
   display: flex;
+}
+
+.imageElement--carousel {
+  max-width: 139px;
 }
 
 .container {
@@ -128,7 +138,7 @@
 @media screen and (max-width: 700px) {
   .logoImage {
     display: flex;
-    margin-top: 6px;
+    margin-top: 0px;
     justify-content: left;
   
   }
@@ -291,7 +301,7 @@
 }
 
 .productNameContainer {
-  color: #3f3f40;
-  font-weight: bold;
-  font-size: 30px;
+  font-weight: 400;
+  font: 20px Nunito Sans;
+  color: black;
 }
