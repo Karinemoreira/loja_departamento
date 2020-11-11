@@ -86,9 +86,19 @@
 }
 
 .headerRowContainer--row3Desktop {
-  height: 44px;
-  margin-left: 21px;
-}/*
+  margin-left: -6px;
+  height: 45px;
+}
+
+.headerRowContainer--row2Desktop {
+  margin-top: 8px;
+  height: 46px;
+  margin-right: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+/*
 
 .headerRowContent--row3Desktop {
   height: 44px;

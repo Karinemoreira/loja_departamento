@@ -9,6 +9,7 @@
     "blocks": [
       "header-layout.desktop",
       "header-layout.mobile"
+    
     ]
   },
   "header-layout.desktop": {
@@ -58,8 +59,8 @@
       "title": "Logo",
       "url": "assets/imgs/logo.png",
       "href": "/",
-      "width": 100,
-      "height": 45
+      "width": 108,
+      "height": 50
     }
   },
   "search-bar#desktop": {
@@ -92,6 +93,8 @@
       "header-spacer"
     ]
   },
+
+
   // mobile -----------------------
   "header-layout.mobile": {
     "children": [

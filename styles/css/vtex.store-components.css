@@ -7,17 +7,21 @@
 }
 
 .logoImage {
-    padding-top: 7px;
-    margin-left: 15px;
-}
+    margin: 10px 38px 0 18px;
+  }   
 
 .searchBarInnerContainer {
   width: 898px;
 }
 
+.searchBarContainer :global(.vtex-store-components-3-x-searchBarContainer) {
+  margin-right: 218px;
+}
+
 .searchBarContainer :global(.vtex-styleguide-9-x-input) {
   border-bottom: 1px solid grey;
   padding: 0;
+  padding-left: 8px;
 }
 
 :global(.vtex-input__suffix) {
@@ -110,7 +114,6 @@
 
 .inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
   font-size: 16px;
-  margin-left: 30px;
 }
 
 .inputGroup :global(.vtex-button) {
@@ -151,6 +154,9 @@
     color: white;
   }
 
+  .searchBarContainer {
+    width: 100vw;
+  }
   .container-news {
     margin: 0px 21px 0px 21px;
   }
@@ -165,45 +171,9 @@
     max-height: 600px;
   }
 
-  .searchBarContainer :global(.vtex-styleguide-9-x-input) {
-    margin: 0;
-    background-color: #4f32fe;
-    border: none;
-    padding: 0px; 
-  }
-  
-  :global(.vtex-input-prefix__group) {
-    border-radius: 0;
-    border: none;
-    height: 57px;
-  }
-
-  :global(.vtex-input__suffix) {
-    border-radius: 0;
-    background-color: #4F32FE;
-  }
-
-  :global(.vtex-styleguide-9-x-input)::placeholder {
-    color: white;
-    font-weight: 300;
-    font: 14px Nunito Sans;
-    text-align: start;
-  }
-
-  .searchBarContainer {
-    background-color: #4f32fe;
-    border: none;
-  }
-
 .newsletter {
   background-color: #4F32FE;
   margin: 0 auto;
-}
-
-
-
-.label--news {
-  color: #fff;
 }
 
 .label--news::after {
@@ -219,67 +189,6 @@
   font-weight: 700;
   font: 20px Nunito Sans;
 }
-
-.inputGroup {
-  font-family: Nunito Sans;
-  font-weight: bolder;
-  padding-bottom: 4px;
-  display: block;
-  color: #fff;
-}
-
-:global(.vtex-store-components-3-x-searchBarContainer) {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-:global(.vtex-store-components-3-x-container) {
-  padding: 0px;
-}
-
-:global(.vtex-input-prefix__group) {
-  border: none;
-}
-
-:global(.vtex-store-components0-x-searchIcon--searchBar) {
-  color: white
-}
-
-.searchBarContainer :global(.vtex-styleguide-9-x-input) {
-  border: none;
-  margin-left: 28px;
-}
-
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators) {
-  border: none;
-  border-radius: 29px;
-  background-color: #2811aa;
-}
-
-.inputGroup :global(.vtex-styleguide-9-x-hideDecorators)::placeholder {
-  font-size: 14px;
-  font-weight: 300;
-  margin-left: 30px;
-}
-
-.inputGroup :global(.vtex-button) {
-  background-color: transparent;
-  font: 14px Nunito Sans ;
-  font-weight: 900;
-  border: none;
-  display: block;
-}
-
-/*.label--news {
-  height: 150px;
-  padding-top: 41px;
-}*/
-
-.form--news :global(.vtex-store-components-3-x-form--news){
-  height: 150px;
-  padding-top: 41px;
-}
- 
 }
 
 .productImagesContainer--quickview .carouselContainer {

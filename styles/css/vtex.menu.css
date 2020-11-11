@@ -3,21 +3,20 @@
 }
 
 .styledIcon--rebel-pink {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .styledLinkContent--firstMenuItem {
-  font: black 600 15px Nunito Sans;
-  font-size: 15px;
-  margin-right: 20px;
+  font: 600 15px Nunito Sans;
+  margin-right: 21px;
 }
 
 .styledLinkContainer--firstMenuItem {
-  margin-right: -10px;
+  margin-right: 3px;
 }
 
 .styledLinkIcon--firstMenuItem {
-  margin-right: 1.0rem;
+  margin-right: 0.9rem;
 }
 
 .menuContainerNav {

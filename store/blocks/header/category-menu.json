@@ -31,9 +31,9 @@
       },
       "iconProps": {
         "id": "bnd-logo",
-        "size": 21,
-        "viewBox": "0 0 21 21",
-        "activeClassName": "rebel-pink",
+        "size": 24,
+        "viewBox": "0 0 24 24",
+        "activeClassName": "fakeDrawer",
         "mutedClassName": "c-action-primary"
       },
       "iconToTheRight": true

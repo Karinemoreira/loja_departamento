@@ -3,6 +3,9 @@
   height: 23px;
 }
 
+.container :global(.vtex-login-2-x-container) {
+margin-right: 0px;
+}
 
 .emailPasswordOptionBtn :global(.vtex-button__label), .acessCodeOptionBtn :global(.vtex-button__label) {
   color: black;
@@ -17,10 +20,6 @@
   text-transform: none;
 }
 
-.container--loginIcon :global(.vtex-login-2-x-container) {
-  margin-left: 215px;
-}
-
 .container :global(.relative):focus {
   outline: #ffffff;
 } 
@@ -29,7 +28,7 @@
   padding: 0;
   width: 20px;
   height: 24px;
-  margin-right: 20px;
+  margin: 0;
 }
 
 .container :global(.vtex-button):focus {
